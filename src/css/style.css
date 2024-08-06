@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+*::selection {
+  color: #4af626;
+  background-color: rgb(0, 0, 0);
+}
+p {
+  font-size: 20px;
+}
+body {
+  font-family: "JetBrains Mono";
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.dark-mode {
+  background-color: #212121;
+  color: white;
+  color-scheme: dark;
+}
+.dark-mode::selection {
+  color: #4af626;
+  background-color: rgb(0, 0, 0);
+}
+@keyframes border-color-changer {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: darkslateblue;
+  }
+  100% {
+    border-color: rgb(255, 136, 136);
+  }
+}
+header {
+  padding: 3%;
+}
+#navbar {
+  border-color: white;
+  font-size: larger;
+  font-weight: 600;
+  border: 5px solid;
+  text-shadow: rgb(16, 255, 115) 1px 0 10px;
+}
+#navbar li {
+  text-decoration: underline solid;
+  display: inline-block;
+  padding: 3%;
+}
+#navbar li:hover {
+  color: rgb(103, 255, 133);
+  transition: color 1s ease-out;
+}
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  margin: 0% 7% 5% 7%;
+  padding: 5%;
+  border: 10px solid rgb(0, 140, 255);
+}
+main h1 {
+  font-size: 250%;
+  text-align: center;
+  text-decoration: underline solid rgb(112, 112, 255);
+}
+h1::before,
+h3::before {
+  content: "-> ";
+}
+p::before {
+  content: "[*] ";
+}
+#bold-text {
+  font-weight: 900;
+  text-decoration: underline solid;
+}
+.intro-container {
+  margin: 5% 0% 5% 0%;
+}
+.tech-container {
+  margin: 5% 0% 5% 0%;
+}
+.tech-container ul {
+  color: black;
+  list-style-type: none;
+}
+.tech-container li {
+  display: block;
+  border: 5px solid rgb(0, 0, 0);
+  margin: 6px;
+  padding: 1%;
+  font-weight: 600;
+}
+.tech-container li:nth-child(1) {
+  background-color: rgb(255, 65, 65);
+}
+.tech-container li:nth-child(2) {
+  background-color: #2965f1;
+}
+.tech-container li:nth-child(3) {
+  background-color: #f0db4f;
+}
+.right {
+  float: right;
+}
+.right::before {
+  content: "=>";
+}
+#blog-container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  padding: 2%;
+  margin: 5% 0% 5% 0%;
+}
+#blog-container * {
+  margin: 12px;
+}
+
+#blog-container h3 {
+  text-decoration: underline solid salmon;
+}
+h3 {
+  cursor: pointer;
+}
+.blog-one {
+  border: 5px solid rgb(70, 104, 255);
+}
+.blog-two {
+  border: 5px solid rgb(70, 104, 255);
+}
+.blog-three {
+  border: 5px solid rgb(70, 104, 255);
+}
+.blog-three::after {
+  content: '"something about music..."';
+  font-size: 12px;
+  margin: auto;
+  padding: 3%;
+  font-style: oblique;
+  opacity: 50%;
+  color: rgb(78, 76, 139);
+}
+.blog-four {
+  border: 5px solid rgb(70, 104, 255);
+}
+
+.contact-container ul {
+  list-style: none;
+  display: inline;
+}
+.right-2 {
+  text-align: center;
+}
+.left {
+  float: left;
+}
+footer {
+  margin: 5%;
+  padding: 2.5%;
+  border: 6px solid rgb(255, 0, 102);
+  font-weight: 300;
+}
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+#theme-toggle {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.readmore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.readmore a {
+  color: inherit;
+  text-decoration: underline solid rgb(0, 0, 0);
+}
+
+.contact-container {
+  border-width: 5px;
+  border-style: solid;
+  padding: 5%;
+  margin: 5% 15% 5% 15%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: baseline;
+  justify-items: center;
+  font-size: larger;
+}
+.contact-container div:hover {
+  color: rgb(255, 72, 0);
+  transition: color 500ms ease-in-out;
+}
+.contact-container a {
+  color: inherit;
+  text-decoration: none;
+}
+#phone-number {
+  --balloon-color: rgb(0, 0, 0);
+  --balloon-text-color: #ffffff;
+}
+#phone-logo {
+  font-size: 1.5rem;
+}
+.checklist-container label {
+  cursor: copy;
+}
+.checklist-container {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  #blog-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding: 2%;
+    margin: 5% 0% 5% 0%;
+  }
+  #tech {
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .contact-container {
+    border-width: 5px;
+    border-style: solid;
+    padding: 5%;
+    margin: 5% 0% 5% 0%;
+    display: block;
+  }
+}
