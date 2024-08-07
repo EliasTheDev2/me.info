@@ -77,11 +77,11 @@ hr::after {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   justify-items: center;
+  margin: 0% 15% 0% 15%;
   border: 3px solid;
   padding: 3%;
-  float: left;
+  /* float: left; */
   font-size: medium;
-  margin: 0 50% 100% 0;
 }
 #samples-container p::before {
   content: "";
@@ -99,30 +99,9 @@ hr::after {
     padding: 0;
   }
 }
-
-@media screen and (max-width: 800px) {
-  #tracklist-container ol {
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 5%;
-    padding: 25px 55px 25px 55px;
-    font-size: 15px;
-    float: left;
-  }
-}
 @media screen and (max-width: 900px) {
   #tracklist-container ol {
-    font-size: 15px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin-right: 25%;
-    padding: 25px 55px 25px 55px;
-    font-size: 15px;
-    float: left;
-  }
-  .phone-br {
-    display: none;
+    padding: 5% 10% 5% 10%;
   }
 }
 #hide {
