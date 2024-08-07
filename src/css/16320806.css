@@ -1,0 +1,109 @@
+:root {
+  --hr-after-bg-color: #ffffff;
+  --hr-bg-color: black;
+  --hr-color: rgb(0, 0, 0);
+}
+p {
+  font-size: 17px;
+  font-style: italic;
+}
+.bold-text {
+  font-weight: 900;
+  text-decoration: underline solid rgb(0, 130, 37);
+}
+h1::before {
+  content: "-> ";
+}
+h2::before {
+  content: "=> ";
+}
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: underline solid rgb(62, 112, 219);
+  margin-bottom: 30px;
+  font-style: normal;
+}
+#header {
+  margin: 0 10% 0 10%;
+}
+#navbar {
+  list-style: none;
+}
+#navbar li {
+  font-size: 30px;
+}
+#index-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 50px;
+}
+#index-container ul {
+  list-style: none;
+  margin: 5%;
+  margin-top: 5px;
+  padding: 3%;
+  border: 5px solid rgb(255, 226, 99);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+a {
+  color: rgb(67, 67, 252);
+}
+hr {
+  border: none;
+  border-top: 3px double var(--hr-bg-color);
+  color: var(--hr-color);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr::after {
+  background: var(--hr-after-bg-color);
+  content: "§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+#music-career-index {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+#tracklist-container ol {
+  list-style: cjk-decimal;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  justify-items: center;
+  margin: 15px;
+  border: 3px solid;
+  padding: 2%;
+  font-size: x-large;
+  margin: 0 50% 0 0;
+}
+@media screen and (max-width: 500px) {
+  #header {
+    margin: 5% 15% 5% 15%;
+  }
+  #index-container {
+    line-height: initial;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  #tracklist-container ol {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5%;
+    padding: 25px 55px 25px 55px;
+    font-size: 15px;
+    float: left;
+  }
+}
+#hide {
+  display: none;
+}
