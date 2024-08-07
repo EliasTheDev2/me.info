@@ -77,11 +77,17 @@ hr::after {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   justify-items: center;
-  margin: 15px;
   border: 3px solid;
-  padding: 2%;
-  font-size: x-large;
-  margin: 0 50% 0 0;
+  padding: 3%;
+  float: left;
+  font-size: medium;
+  margin: 0 50% 100% 0;
+}
+#samples-container p::before {
+  content: "";
+}
+#extras-container p::before {
+  content: "";
 }
 @media screen and (max-width: 500px) {
   #header {
@@ -93,6 +99,7 @@ hr::after {
     padding: 0;
   }
 }
+
 @media screen and (max-width: 800px) {
   #tracklist-container ol {
     font-size: 15px;
@@ -102,6 +109,20 @@ hr::after {
     padding: 25px 55px 25px 55px;
     font-size: 15px;
     float: left;
+  }
+}
+@media screen and (max-width: 900px) {
+  #tracklist-container ol {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 25%;
+    padding: 25px 55px 25px 55px;
+    font-size: 15px;
+    float: left;
+  }
+  .phone-br {
+    display: none;
   }
 }
 #hide {
