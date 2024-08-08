@@ -100,7 +100,7 @@ hr::after {
 }
 @media screen and (max-width: 900px) {
   #tracklist-container ol {
-    margin: 0 10% 0 10%                  ;
+    margin: 0 10% 0 10%;
     padding: 5% 10% 5% 10%;
   }
 }
