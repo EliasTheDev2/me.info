@@ -75,12 +75,11 @@ hr::after {
 #tracklist-container ol {
   list-style: cjk-decimal;
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(1, 2fr);
   justify-items: center;
-  margin: 0% 15% 0% 15%;
+  margin: 0% 35% 0% 35%;
   border: 3px solid;
   padding: 3%;
-  /* float: left; */
   font-size: medium;
 }
 #samples-container p::before {
@@ -101,6 +100,7 @@ hr::after {
 }
 @media screen and (max-width: 900px) {
   #tracklist-container ol {
+    margin: 0 10% 0 10%                  ;
     padding: 5% 10% 5% 10%;
   }
 }
